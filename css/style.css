@@ -387,6 +387,9 @@ h1 span {
     background-color: white;
     border-radius: 5px;
 }
+.searchbox img {
+    align-items: center;
+}
 .searchbox .box:focus {
     border: blue 2px solid;
 }
