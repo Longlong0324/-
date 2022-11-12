@@ -379,10 +379,10 @@ h1 span {
     display: flex;
     position: relative;
     width: 625px;
+    height: 52px;
     margin: 52px auto;
 }
 .searchbox .box {
-    height: 52px;
     width: 625px;
     background-color: white;
     border-radius: 5px;
@@ -395,7 +395,6 @@ h1 span {
     right:10px;
     border: none;
     background-color: white;
-    line-height: 52px;
     color: black;
     cursor: pointer;
 }
@@ -412,12 +411,17 @@ h1 span {
     font-size: 20px;
     color: #9b9b9b;
 }
-.faqcontent h4 {
+.faqcontent .q {
     letter-spacing: 2px;
     font-size: 20px;
     line-height: 32px;
+    list-style: none;
+    color: black;
 }
-.faqcontent p, .faqcontent ul, .faqcontent ol {
+.faqcontent .a {
+    list-style: none;
+}
+.faqcontent .a, .faqcontent ul, .faqcontent ol {
     color: #9b9b9b;
     letter-spacing: 1.5px;
     font-size: 16px;
@@ -428,13 +432,18 @@ h1 span {
     text-decoration: none;
     color: #00cc99;
 }
-.faqcontent ol {
-    list-style:decimal;
+.faqcontent .installment, .faqcontent .return {
     padding-left: 60px;
 }
-.faqcontent ul {
-    list-style:inside;
-    padding-left: 35px;
+.faqcontent .installment {
+    list-style-type: decimal;
+}
+.faqcontent .return {
+    list-style: disc;
+}
+.faqcontent .installment li, .faqcontent .return li {
+    list-style-position:initial;
+    padding-left: 20px;
 }
 .faqform {
     background-color: #ebebeb;
